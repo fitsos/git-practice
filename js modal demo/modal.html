@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Modal Demo</title>
+	<script type="text/javascript" src="modal.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+<body>
+<p>Here is what you see initially</p>
+<button id="showoverlay" style="background-color: rgba(128,0,128, .7); color: white;" href='#' class="btn-large" onclick="overlay()">Click here to show the overlay</button>
+<div id="overlay">
+     <div id="loginform" style="border-radius: 10px;">
+		<section class="loginform cf">  
+			<form name="login" action="index_submit" method="get" accept-charset="utf-8">  
+				<ul>  
+					<li>
+						<label for="usermail">Email</label>  <br/>
+						<input type="email" name="usermail" placeholder="yourname@email.com" required>
+					</li>  
+					<li>
+						<label for="password">Password</label> 
+						<input type="password" name="password" placeholder="password" required> 
+					</li>  
+					<li>  
+						<input type="submit" class="btn-large" id="submit" value="Login">
+						<button onclick="overlay()" id="cancel">X</button>
+					</li> 
+					<li>
+						<a link href="#"><p>Did you forget your password?<p></a>
+					</li>
+				</ul>  
+			</form>  
+		</section>  
+     </div>
+</div>
+</body>
+</html>
